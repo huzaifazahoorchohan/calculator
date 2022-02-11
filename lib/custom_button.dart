@@ -5,20 +5,22 @@ class CustomWidget extends StatelessWidget {
     Key? key,
     required this.btnText,
     required this.btnfillcolor,
+    required this.callback,
   }) : super(key: key);
 
   final String btnText;
   final Color btnfillcolor;
+  final Function callback;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
-        width: 70.0,
-        height: 70.0,
+        width: 65.0,
+        height: 65.0,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () => callback(btnText),
           child: Text(
             btnText,
             style: const TextStyle(
