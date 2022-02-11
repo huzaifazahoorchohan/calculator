@@ -4,9 +4,11 @@ class CustomWidget extends StatelessWidget {
   const CustomWidget({
     Key? key,
     required this.btnText,
+    required this.btnfillcolor,
   }) : super(key: key);
 
   final String btnText;
+  final Color btnfillcolor;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class CustomWidget extends StatelessWidget {
             ),
           ),
           style: ElevatedButton.styleFrom(
-            primary: Colors.transparent,
+            primary: btnfillcolor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(50),
             ),

@@ -12,95 +12,147 @@ class Calculator extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff293241),
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CustomWidget(
-                  btnText: "AC",
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              const Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 40.0,
+                  vertical: 0.0,
                 ),
-                CustomWidget(
-                  btnText: "C",
+                child: Text(
+                  "123",
+                  style: TextStyle(
+                    color: Color(0xffbfc0c0),
+                    fontWeight: FontWeight.w400,
+                    fontSize: 28.0,
+                  ),
                 ),
-                CustomWidget(
-                  btnText: "%",
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 40.0,
+                  vertical: 10.0,
                 ),
-                CustomWidget(
-                  btnText: "/",
+                child: Text(
+                  "2134",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 44.0,
+                  ),
                 ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CustomWidget(
-                  btnText: "7",
-                ),
-                CustomWidget(
-                  btnText: "8",
-                ),
-                CustomWidget(
-                  btnText: "9",
-                ),
-                CustomWidget(
-                  btnText: "*",
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CustomWidget(
-                  btnText: "4",
-                ),
-                CustomWidget(
-                  btnText: "5",
-                ),
-                CustomWidget(
-                  btnText: "6",
-                ),
-                CustomWidget(
-                  btnText: "-",
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CustomWidget(
-                  btnText: "1",
-                ),
-                CustomWidget(
-                  btnText: "2",
-                ),
-                CustomWidget(
-                  btnText: "3",
-                ),
-                CustomWidget(
-                  btnText: "+",
-                ),
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                CustomWidget(
-                  btnText: ".",
-                ),
-                CustomWidget(
-                  btnText: "0",
-                ),
-                CustomWidget(
-                  btnText: "00",
-                ),
-                CustomWidget(
-                  btnText: "=",
-                ),
-              ],
-            ),
-          ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CustomWidget(
+                    btnText: "AC",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                  CustomWidget(
+                    btnText: "C",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                  CustomWidget(
+                    btnText: "%",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                  CustomWidget(
+                    btnText: "/",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CustomWidget(
+                    btnText: "7",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "8",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "9",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "*",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CustomWidget(
+                    btnText: "4",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "5",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "6",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "-",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CustomWidget(
+                    btnText: "1",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "2",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "3",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "+",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  CustomWidget(
+                    btnText: ".",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "0",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "00",
+                    btnfillcolor: Color(0xff293241),
+                  ),
+                  CustomWidget(
+                    btnText: "=",
+                    btnfillcolor: Color(0xffbfc0c0),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
