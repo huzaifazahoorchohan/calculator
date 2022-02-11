@@ -18,8 +18,17 @@ class _CalculatorState extends State<Calculator> {
   double expFontSize = 44.0;
   double historyFontSize = 28.0;
 
+  String newString(String oldString, int n) {
+    String lastword = "";
+    if (oldString.length >= n) {
+      return oldString.substring(oldString.length - n);
+    }
+    return lastword;
+  }
+
   void btnClicked(String btnTxt) {
     _expression += btnTxt;
+
     setState(() {});
   }
 
